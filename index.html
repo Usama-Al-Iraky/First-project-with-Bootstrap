@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project With Bootstrap</title>
+    <!-- Bootstrap Css File -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="CSS/main.css" />
+    <!-- Card Section Css File -->
+    <link rel="stylesheet" href="CSS/card.css" />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="Images/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler p-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link p-2 p-lg-3 dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Trips
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 p-lg-3" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-none d-lg-flex" role="search">
+            <input
+              class="search-input rounded-5 form-control m-1 mt-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="border-0 rounded m-2 p-1 btn-me bg-tx-2"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+          <button
+            class="border-0 rounded m-2 p-1 btn-me bg-tx-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#demo"
+          >
+            Log In
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-top my-5 mx-auto rounded-4" id="demo">
+      <div class="offcanvas-header bg-tx rounded-top-4">
+        <h1 class="offcanvas-title">Log In</h1>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <form class="offcanvas-form p-4">
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+            name="email"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="pwd"
+            placeholder="Enter password"
+            name="pswd"
+          />
+        </div>
+        <div class="form-check form-switch mb-3">
+          <input
+            class="form-check-input border-0"
+            type="checkbox"
+            id="mySwitch"
+            name="darkmode"
+            value="yes"
+            style="background-color: var(--main-color)"
+          />
+          <label class="form-check-label" for="mySwitch">Remember Me</label>
+        </div>
+        <button type="submit" class="bg-tx border-0 p-2 rounded">Log in</button>
+      </form>
+    </div>
+    <!-- End Navbar -->
+    <!-- Start Landing -->
+    <!-- Start Carousel -->
+    <div id="yalla" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#yalla"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#yalla"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#yalla"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-item-one active h-100 w-100">
+          <div
+            class="carousel-dwon w-75 p-4 text-center rounded position-absolute"
+          >
+            <h2 class="carousel-dwon-head text-uppercase">Cairo</h2>
+            <p class="carousel-dwon-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              iste pariatur sint inventore sit qui voluptas in natus velit, nam
+              molestiae esse impedit numquam unde cumque illum perspiciatis
+              perferendis earum?
+            </p>
+            <button class="carousel-dwon-btn border-0 py-2 px-3 rounded bg-tx">
+              Visit Now
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-two h-100 w-100">
+          <div
+            class="carousel-dwon w-75 p-4 text-center rounded position-absolute"
+          >
+            <h2 class="carousel-dwon-head text-uppercase">Luxor</h2>
+            <p class="carousel-dwon-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              iste pariatur sint inventore sit qui voluptas in natus velit, nam
+              molestiae esse impedit numquam unde cumque illum perspiciatis
+              perferendis earum?
+            </p>
+            <button class="carousel-dwon-btn border-0 py-2 px-3 rounded bg-tx">
+              Visit Now
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item-three h-100 w-100">
+          <div
+            class="carousel-dwon w-75 p-4 text-center rounded position-absolute"
+          >
+            <h2 class="carousel-dwon-head text-uppercase">Aswan</h2>
+            <p class="carousel-dwon-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              iste pariatur sint inventore sit qui voluptas in natus velit, nam
+              molestiae esse impedit numquam unde cumque illum perspiciatis
+              perferendis earum?
+            </p>
+            <button class="carousel-dwon-btn border-0 py-2 px-3 rounded bg-tx">
+              Visit Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#yalla"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#yalla"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <!-- End Carousel -->
+      <!-- Side Icons Start -->
+      <div
+        class="side-icons d-none d-lg-flex flex-column position-absolute align-items-center rounded z-3"
+        id="hello"
+      >
+        <a
+          href="https://www.facebook.com/koko.yamany/"
+          target="_blank"
+          class="m-3"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a
+          href="https://api.whatsapp.com/send/?phone=01553601580&text&type=phone_number&app_absent=0"
+          target="_blank"
+          class="m-3"
+          ><i class="fa-brands fa-square-whatsapp"></i
+        ></a>
+        <a href="https://x.com/koko_yamny" target="_blank" class="m-3"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/usama-goma-al-iraqy-16042a322"
+          target="_blank"
+          class="m-3"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/yamny_gomaa/"
+          target="_blank"
+          class="m-3"
+          ><i class="fa-brands fa-square-instagram"></i
+        ></a>
+      </div>
+    </div>
+    <!-- Side Icons End -->
+    <!-- End Landing -->
+    <!-- Welcome Message Start -->
+    <div class="bg-tx rounded-bottom py-3 px-5">
+      <h1>Welcome</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+        pariatur debitis odit! Totam necessitatibus quaerat error excepturi eos
+        enim consequatur temporibus consequuntur quo a nam expedita accusamus
+        dolores ipsum delectus inventore velit commodi, doloremque mollitia
+        explicabo saepe nesciunt nihil. Nisi praesentium cupiditate vel optio
+        eum laboriosam, minus quae excepturi perspiciatis blanditiis quidem
+        repellat incidunt facere ipsam cumque. Aliquid aliquam vitae corporis at
+        nisi sunt nobis ad reprehenderit temporibus modi cum, quis ut, eligendi
+        distinctio beatae hic obcaecati repellat, doloremque saepe
+        exercitationem dolorum labore. Nostrum eveniet consequatur veniam rerum
+        libero omnis at, mollitia unde, odio, laboriosam reprehenderit ut
+        incidunt quos reiciendis!
+      </p>
+      <button class="btn-me bg-tx-2 py-2 px-3 border-0 rounded">
+        Learn More
+      </button>
+    </div>
+    <!-- Welcome Message End -->
+    <hr />
+    <!-- Accordion Section Start -->
+    <!-- Accordion Header Start -->
+    <div class="bg-tx p-5 rounded-top text-center">
+      <span class="align-middle h1 text-white"
+        >Popular Destination in Egypt</span
+      >
+    </div>
+    <!-- Accordion Header End -->
+    <!-- Accordion Start -->
+    <div id="accordion">
+      <div
+        type="button"
+        class="w-100 bg-tx-2 rounded-top mt-3 mb-0 h2 p-2 px-5 text-uppercase"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseOne"
+      >
+        giza city
+      </div>
+      <div
+        id="collapseOne"
+        class="bg-tx-3 rounded-bottom collapse p-2"
+        data-bs-parent="#accordion"
+      >
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta animi
+          quia impedit ducimus id voluptates perferendis fugiat. Aut incidunt id
+          corrupti eveniet dolore eius expedita ipsam architecto placeat esse
+          aspernatur rem provident, sit earum beatae voluptas velit
+          exercitationem veniam consectetur ullam pariatur mollitia voluptate
+          similique! Enim possimus corrupti ipsam suscipit iure est, veniam
+          sequi quae expedita incidunt obcaecati deserunt omnis? Laborum
+          excepturi repudiandae magnam, sunt enim nisi molestiae voluptatem quia
+          doloremque in velit. Quod odio error possimus eos praesentium ipsam
+          modi, sapiente eaque ratione perspiciatis porro, eum doloribus
+          quibusdam beatae maiores consequatur inventore, quo magni facere ipsum
+          et veniam culpa?
+        </div>
+      </div>
+      <div
+        type="button"
+        class="w-100 bg-tx-2 rounded-top mt-3 mb-0 h2 p-2 px-5 text-uppercase"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseTwo"
+      >
+        luxor city
+      </div>
+      <div
+        id="collapseTwo"
+        class="bg-tx-3 rounded-bottom collapse p-2"
+        data-bs-parent="#accordion"
+      >
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta animi
+          quia impedit ducimus id voluptates perferendis fugiat. Aut incidunt id
+          corrupti eveniet dolore eius expedita ipsam architecto placeat esse
+          aspernatur rem provident, sit earum beatae voluptas velit
+          exercitationem veniam consectetur ullam pariatur mollitia voluptate
+          similique! Enim possimus corrupti ipsam suscipit iure est, veniam
+          sequi quae expedita incidunt obcaecati deserunt omnis? Laborum
+          excepturi repudiandae magnam, sunt enim nisi molestiae voluptatem quia
+          doloremque in velit. Quod odio error possimus eos praesentium ipsam
+          modi, sapiente eaque ratione perspiciatis porro, eum doloribus
+          quibusdam beatae maiores consequatur inventore, quo magni facere ipsum
+          et veniam culpa?
+        </div>
+      </div>
+      <div
+        type="button"
+        class="w-100 bg-tx-2 rounded-top mt-3 mb-0 h2 p-2 px-5 text-uppercase"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseThree"
+      >
+        sinai phninsula
+      </div>
+      <div
+        id="collapseThree"
+        class="bg-tx-3 rounded-bottom collapse p-2"
+        data-bs-parent="#accordion"
+      >
+        <div class="card-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta animi
+          quia impedit ducimus id voluptates perferendis fugiat. Aut incidunt id
+          corrupti eveniet dolore eius expedita ipsam architecto placeat esse
+          aspernatur rem provident, sit earum beatae voluptas velit
+          exercitationem veniam consectetur ullam pariatur mollitia voluptate
+          similique! Enim possimus corrupti ipsam suscipit iure est, veniam
+          sequi quae expedita incidunt obcaecati deserunt omnis? Laborum
+          excepturi repudiandae magnam, sunt enim nisi molestiae voluptatem quia
+          doloremque in velit. Quod odio error possimus eos praesentium ipsam
+          modi, sapiente eaque ratione perspiciatis porro, eum doloribus
+          quibusdam beatae maiores consequatur inventore, quo magni facere ipsum
+          et veniam culpa?
+        </div>
+      </div>
+    </div>
+    <!-- Accordion End -->
+    <!-- Accordion Section End -->
+    <hr />
+    <!-- Translate Section Start -->
+    <!-- Translate Header Start -->
+    <div class="bg-tx p-3 rounded-top text-center">
+      <span class="align-middle h1 text-white"
+        >Translate from Arabic to English</span
+      >
+    </div>
+    <!-- Translate Header End -->
+    <!-- Translate Area Start -->
+    <div class="copy-area bg-tx-3 rounded-bottom py-3 px-5">
+      <div class="d-none d-lg-block h2">
+        Write and Translate
+        <a href="" class="press-link text-decoration-none">Press Here</a>
+      </div>
+      <div class="d-lg-none h5">
+        Write and Translate
+        <a href="" class="press-link text-decoration-none">Press Here</a>
+      </div>
+      <button
+        class="btn-me bg-tx-2 py-2 px-3 border-0 rounded"
+        data-bs-toggle="tooltip"
+        title="Copy to clipboard"
+        data-bs-placement="right"
+      >
+        Copy
+      </button>
+      <textarea
+        name=""
+        id=""
+        placeholder="Translate"
+        class="text-area w-100 my-2 rounded border-0"
+      ></textarea>
+    </div>
+    <!-- Translate Area End -->
+    <hr />
+    <!-- Translate Header Start -->
+    <div class="bg-tx p-3 rounded-top text-center">
+      <span class="align-middle h1 text-white"
+        >Translate from Arabic to Frensh</span
+      >
+    </div>
+    <!-- Translate Header End -->
+    <!-- Translate Area Start -->
+    <div class="copy-area bg-tx-3 rounded-bottom py-3 px-5">
+      <div class="d-none d-lg-block h2">
+        Write and Translate
+        <a href="" class="press-link text-decoration-none">Press Here</a>
+      </div>
+      <div class="d-lg-none h5">
+        Write and Translate
+        <a href="" class="press-link text-decoration-none">Press Here</a>
+      </div>
+      <button
+        class="btn-me bg-tx-2 py-2 px-3 border-0 rounded"
+        data-bs-toggle="tooltip"
+        title="Copy to clipboard"
+        data-bs-placement="right"
+      >
+        Copy
+      </button>
+      <textarea
+        name=""
+        id=""
+        placeholder="Translate"
+        class="text-area w-100 my-2 rounded border-0"
+      ></textarea>
+    </div>
+    <!-- Translate Area End -->
+    <hr />
+    <!-- Translate Header Start -->
+    <div class="bg-tx p-3 rounded-top text-center">
+      <span class="align-middle h1 text-white"
+        >Translate from Arabic to German</span
+      >
+    </div>
+    <!-- Translate Header End -->
+    <!-- Translate Area Start -->
+    <div class="copy-area bg-tx-3 rounded-bottom py-3 px-5">
+      <div class="d-none d-lg-block h2">
+        Write and Translate
+        <a href="" class="press-link text-decoration-none">Press Here</a>
+      </div>
+      <div class="d-lg-none h5">
+        Write and Translate
+        <a href="" class="press-link text-decoration-none">Press Here</a>
+      </div>
+      <button
+        class="btn-me bg-tx-2 py-2 px-3 border-0 rounded"
+        data-bs-toggle="tooltip"
+        title="Copy to clipboard"
+        data-bs-placement="right"
+      >
+        Copy
+      </button>
+      <textarea
+        name=""
+        id=""
+        placeholder="Translate"
+        class="text-area w-100 my-2 rounded border-0"
+      ></textarea>
+    </div>
+    <!-- Translate Area End -->
+    <hr />
+    <!-- Translate Section End -->
+    <!-- Cards Section Start -->
+    <!-- Cards Section Header Start -->
+    <div class="test w-100">
+      <div class="overlay w-100 bg-black bg-opacity-25"></div>
+      <div class="bg-tx p-5 rounded-top text-center">
+        <span class="align-middle h1 text-white"
+          >Popular Destination in Egypt</span
+        >
+      </div>
+      <!-- Cards Section Header End -->
+      <!-- Cards Start -->
+      <div
+        class="cards row row-cols-md-2 bg-light justify-content-around w-100 m-auto"
+      >
+        <div class="card-container d-inline col-lg-4 col-md-6 col-sm-12">
+          <div class="card bg-tx-3 my-4 mx-auto p-2 shadow">
+            <img
+              src="Images/cairo.jpg"
+              height="300px"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <div class="h5 card-title">CAIRO</div>
+              <p class="card-text">Capital of Egypt</p>
+              <button class="btn-me bg-tx-2 py-2 px-3 border-0 rounded">
+                Know More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container d-inline col-lg-4 col-md-6 col-sm-12">
+          <div class="card bg-tx-3 my-4 mx-auto p-2 shadow">
+            <img
+              src="Images/alexandria.jpg"
+              height="300px"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <div class="h5 card-title">ALEXANDRIA</div>
+              <p class="card-text">The Bride of the mediterranean</p>
+              <button class="btn-me bg-tx-2 py-2 px-3 border-0 rounded">
+                Know More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container d-inline col-lg-4 col-md-6 col-sm-12">
+          <div class="card bg-tx-3 my-4 mx-auto p-2 shadow">
+            <img
+              src="Images/luxor.jpeg"
+              height="300px"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <div class="h5 card-title">LUXOR</div>
+              <p class="card-text">The Capital of the Ancient Kingdom</p>
+              <button class="btn-me bg-tx-2 py-2 px-3 border-0 rounded">
+                Know More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container d-inline col-lg-4 col-md-6 col-sm-12">
+          <div class="card bg-tx-3 my-4 mx-auto p-2 shadow">
+            <img
+              src="Images/aswan.jpg"
+              height="300px"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <div class="h5 card-title">ASWAN</div>
+              <p class="card-text">Nubian city in the south of Egypt</p>
+              <button class="btn-me bg-tx-2 py-2 px-3 border-0 rounded">
+                Know More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container d-inline col-lg-4 col-md-6 col-sm-12">
+          <div class="card bg-tx-3 my-4 mx-auto p-2 shadow">
+            <img
+              src="Images/new capital.jpeg"
+              height="300px"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <div class="h5 card-title">NEW CAPITAL</div>
+              <p class="card-text">The new administrative Capital</p>
+              <button class="btn-me bg-tx-2 py-2 px-3 border-0 rounded">
+                Know More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container d-inline col-lg-4 col-md-6 col-sm-12">
+          <div class="card bg-tx-3 my-4 mx-auto p-2 shadow">
+            <img
+              src="Images/sharm elsheikh.jpg"
+              height="300px"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <div class="h5 card-title">SHARM EL-SHEIKH</div>
+              <p class="card-text">Beautiful city in Egypt</p>
+              <button class="btn-me bg-tx-2 py-2 px-3 border-0 rounded">
+                Know More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container d-inline col-lg-4 col-md-6 col-sm-12">
+          <div class="card bg-tx-3 my-4 mx-auto p-2 shadow">
+            <img
+              src="Images/hurghada.jpg"
+              height="300px"
+              alt=""
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <div class="h5 card-title">HURGHADA</div>
+              <p class="card-text">City on the red see</p>
+              <button class="btn-me bg-tx-2 py-2 px-3 border-0 rounded">
+                Know More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cards End -->
+      <div class="overlay w-100 bg-black bg-opacity-25"></div>
+    </div>
+    <hr />
+    <!-- Cards Section End -->
+    <!-- Team Start -->
+    <div class="team">
+      <!-- Team Header Start -->
+      <div class="team-header bg-tx p-5 rounded-top text-center">
+        <span class="align-middle h1 text-white">Thanks For</span>
+      </div>
+      <!-- Team Header End -->
+      <!-- Team Cards Start -->
+      <div class="container">
+        <div class="row w-100 m-auto justify-content-between mb-5">
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="box team-box bg-tx-3 bg-transparent my-5 p-2 rounded-5 position-relative"
+            >
+              <img
+                class="img-fluid opacity-50 rounded-5 shadow"
+                src="Images/me.jpg"
+                alt=""
+              />
+              <div class="box-img position-absolute w-75 p-5">
+                <img
+                  class="img-fluid w-75 rounded-circle shadow"
+                  src="Images/me.jpg"
+                  alt=""
+                />
+                <h6>Usama Al-Iraqr</h6>
+                <p>Front-End Developer</p>
+              </div>
+              <div class="thanks position-absolute p-5">
+                <h6 class="d-lg-none">All Thanks and appreciation</h6>
+                <h4 class="d-none d-lg-block">All Thanks and appreciation</h4>
+                <p><i class="fa-regular fa-clock"></i> Nov 7,2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="box team-box bg-tx-3 bg-transparent my-5 p-2 rounded-5 position-relative"
+            >
+              <img
+                class="img-fluid opacity-50 rounded-5 shadow"
+                src="Images/me.jpg"
+                alt=""
+              />
+              <div class="box-img position-absolute w-75 p-5">
+                <img
+                  class="img-fluid w-75 rounded-circle shadow"
+                  src="Images/me.jpg"
+                  alt=""
+                />
+                <h6>Usama Al-Iraqr</h6>
+                <p>Front-End Developer</p>
+              </div>
+              <div class="thanks position-absolute p-5">
+                <h6 class="d-lg-none">All Thanks and appreciation</h6>
+                <h4 class="d-none d-lg-block">All Thanks and appreciation</h4>
+                <p><i class="fa-regular fa-clock"></i> Nov 7,2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="box team-box bg-tx-3 bg-transparent my-5 p-2 rounded-5 position-relative"
+            >
+              <img
+                class="img-fluid opacity-50 rounded-5 shadow"
+                src="Images/me.jpg"
+                alt=""
+              />
+              <div class="box-img position-absolute w-75 p-5">
+                <img
+                  class="img-fluid w-75 rounded-circle shadow"
+                  src="Images/me.jpg"
+                  alt=""
+                />
+                <h6>Usama Al-Iraqr</h6>
+                <p>Front-End Developer</p>
+              </div>
+              <div class="thanks position-absolute p-5">
+                <h6 class="d-lg-none">All Thanks and appreciation</h6>
+                <h4 class="d-none d-lg-block">All Thanks and appreciation</h4>
+                <p><i class="fa-regular fa-clock"></i> Nov 7,2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Cards End -->
+    </div>
+    <!-- Team End -->
+    <hr />
+    <!-- News Section Start -->
+    <div class="news">
+      <!-- News Section Header Start -->
+      <div class="news-header my-5">
+        <h2 class="text-uppercase fw-bold text-center">Egypt News</h2>
+      </div>
+    </div>
+    <!-- News Section Header End -->
+    <!-- News Cards Start -->
+    <!-- Card One Start -->
+    <div class="card-viwe shadow">
+      <div class="row w-100 m-auto bg-tx-4">
+        <div class="col-lg-4 col-sm-12 card-col-1">
+          <div class="card-img-div">
+            <img
+              class="card-viwe-img img-fluid w-100 h-100"
+              src="Images/aswan.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-12 card-col-2">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p class="py-2">
+            <i class="fa-solid fa-calendar-days"></i> Thursday, November 7, 2024
+          </p>
+          <div class="line-1"></div>
+          <p class="py-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos rerum
+            saepe ab odio, repudiandae ipsa fuga incidunt sequi ex iste commodi
+            deserunt! Itaque dolores qui possimus harum facilis, eligendi
+            tempore deserunt sed perspiciatis fugiat aut beatae nemo provident
+            distinctio facere. Laudantium eaque minima, tenetur voluptatem omnis
+            quia ab id nihil.
+          </p>
+          <ul class="list-unstyled card-ul pt-3">
+            <li class="bg-tx d-inline-block card-li">
+              <i class="fa-solid fa-tag"></i> Product
+            </li>
+            <li class="bg-tx d-inline-block card-li">
+              <i class="fa-regular fa-clock"></i> 55 min
+            </li>
+            <li class="bg-tx-2 d-inline-block card-li btn-me">
+              <i class="fa-solid fa-play"></i> Play Episode
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Card One End -->
+    <!-- Card Two Start -->
+    <div class="card-viwe shadow">
+      <div class="row w-100 m-auto bg-tx-4 flex-row-reverse">
+        <div class="col-lg-4 col-sm-12 card-col-1">
+          <div class="card-img-div-1">
+            <img
+              class="card-viwe-img-1 img-fluid w-100 h-100"
+              src="Images/alexandria.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-12 card-col-2">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p class="py-2">
+            <i class="fa-solid fa-calendar-days"></i> Thursday, November 7, 2024
+          </p>
+          <div class="line-1"></div>
+          <p class="py-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos rerum
+            saepe ab odio, repudiandae ipsa fuga incidunt sequi ex iste commodi
+            deserunt! Itaque dolores qui possimus harum facilis, eligendi
+            tempore deserunt sed perspiciatis fugiat aut beatae nemo provident
+            distinctio facere. Laudantium eaque minima, tenetur voluptatem omnis
+            quia ab id nihil.
+          </p>
+          <ul class="list-unstyled card-ul pt-3">
+            <li class="bg-tx d-inline-block card-li">
+              <i class="fa-solid fa-tag"></i> Product
+            </li>
+            <li class="bg-tx d-inline-block card-li">
+              <i class="fa-regular fa-clock"></i> 55 min
+            </li>
+            <li class="bg-tx-2 d-inline-block card-li btn-me">
+              <i class="fa-solid fa-play"></i> Play Episode
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Card Two End -->
+    <!-- Card Three Start -->
+    <div class="card-viwe shadow">
+      <div class="row w-100 m-auto bg-tx-4">
+        <div class="col-lg-4 col-sm-12 card-col-1">
+          <div class="card-img-div">
+            <img
+              class="card-viwe-img img-fluid w-100 h-100"
+              src="Images/sharm elsheikh 2.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-12 card-col-2">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p class="py-2">
+            <i class="fa-solid fa-calendar-days"></i> Thursday, November 7, 2024
+          </p>
+          <div class="line-1"></div>
+          <p class="py-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos rerum
+            saepe ab odio, repudiandae ipsa fuga incidunt sequi ex iste commodi
+            deserunt! Itaque dolores qui possimus harum facilis, eligendi
+            tempore deserunt sed perspiciatis fugiat aut beatae nemo provident
+            distinctio facere. Laudantium eaque minima, tenetur voluptatem omnis
+            quia ab id nihil.
+          </p>
+          <ul class="list-unstyled card-ul pt-3">
+            <li class="bg-tx d-inline-block card-li">
+              <i class="fa-solid fa-tag"></i> Product
+            </li>
+            <li class="bg-tx d-inline-block card-li">
+              <i class="fa-regular fa-clock"></i> 55 min
+            </li>
+            <li class="bg-tx-2 d-inline-block card-li btn-me">
+              <i class="fa-solid fa-play"></i> Play Episode
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Card Three End -->
+    <!-- Card Four Start -->
+    <div class="card-viwe shadow">
+      <div class="row w-100 m-auto bg-tx-4 flex-row-reverse">
+        <div class="col-lg-4 col-sm-12 card-col-1">
+          <div class="card-img-div-1">
+            <img
+              class="card-viwe-img-1 img-fluid w-100 h-100"
+              src="Images/hurghada.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-lg-8 col-sm-12 card-col-2">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p class="py-2">
+            <i class="fa-solid fa-calendar-days"></i> Thursday, November 7, 2024
+          </p>
+          <div class="line-1"></div>
+          <p class="py-5">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos rerum
+            saepe ab odio, repudiandae ipsa fuga incidunt sequi ex iste commodi
+            deserunt! Itaque dolores qui possimus harum facilis, eligendi
+            tempore deserunt sed perspiciatis fugiat aut beatae nemo provident
+            distinctio facere. Laudantium eaque minima, tenetur voluptatem omnis
+            quia ab id nihil.
+          </p>
+          <ul class="list-unstyled card-ul pt-3">
+            <li class="bg-tx d-inline-block card-li">
+              <i class="fa-solid fa-tag"></i> Product
+            </li>
+            <li class="bg-tx d-inline-block card-li">
+              <i class="fa-regular fa-clock"></i> 55 min
+            </li>
+            <li class="bg-tx-2 d-inline-block card-li btn-me">
+              <i class="fa-solid fa-play"></i> Play Episode
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Card Four End -->
+    <!-- News Cards End -->
+    <!-- News Section End -->
+    <hr />
+    <!-- Join Us Section Start -->
+    <div class="join-us-section text-center">
+      <div class="container">
+        <div class="join-us-header news-header my-5">
+          <h2 class="text-uppercase fw-bold">Join Us</h2>
+        </div>
+        <div class="row py-4">
+          <div class="col-lg-3 col-sm-12">
+            <div class="i-container my-4 bg-primary p-3 w-75 mx-auto rounded">
+              <a href="https://www.facebook.com/koko.yamany/" target="_blank"
+                ><i class="fa-brands fa-facebook-f join-us-i text-light"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <div class="i-container my-4 instagram p-3 w-75 mx-auto rounded">
+              <a href="https://www.instagram.com/yamny_gomaa/" target="_blank"
+                ><i class="fa-brands fa-instagram join-us-i text-light"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <div class="i-container my-4 linkedin p-3 w-75 mx-auto rounded">
+              <a
+                href="https://www.linkedin.com/in/usama-goma-al-iraqy-16042a322"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in join-us-i text-light"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-12">
+            <div class="i-container my-4 whatsapp p-3 w-75 mx-auto rounded">
+              <a
+                href="https://api.whatsapp.com/send/?phone=01553601580&text&type=phone_number&app_absent=0"
+                target="_blank"
+                ><i class="fa-brands fa-whatsapp join-us-i text-light"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Join Us Section End -->
+    <!-- Footer Start -->
+    <footer class="bg-tx text-center m-0">
+      <div class="row w-100 m-auto">
+        <div class="col-lg-4 col-sm-12 right-footer p-4">
+          <hr />
+          <div class="d-flex m-auto w-50 justify-content-around align-items-center">
+            <img class="logo img-fluid" src="Images/logo.png" alt="" />
+            <p>Good Company</p>
+          </div>
+          <hr />
+          <ul class="list-unstyled">
+            <li class="footer-li">Tel: 000-000-000</li>
+            <li class="footer-li">Address: Egypt</li>
+            <li class="footer-li">Fax: 000-000-000</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12 right-footer text-center p-4">
+          <hr />
+          <div class="d-flex m-auto w-50 justify-content-around align-items-center">
+            <img class="logo img-fluid" src="Images/logo.png" alt="" />
+            <p>Important Links</p>
+          </div>
+          <hr />
+          <ul class="list-unstyled">
+            <li class="footer-li"><a class="text-decoration-none text-light" href="">Visit Us</a></li>
+            <li class="footer-li"><a class="text-decoration-none text-light" href="">Take About</a></li>
+            <li class="footer-li"><a class="text-decoration-none text-light" href="">More Info</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-12 right-footer text-center p-4">
+          <hr />
+          <div class="d-flex m-auto w-50 justify-content-around align-items-center">
+            <img class="logo img-fluid" src="Images/logo.png" alt="" />
+            <p>Vision</p>
+          </div>
+          <hr />
+          <ul class="list-unstyled">
+            <li class="footer-li">Serveices For All</li>
+            <li class="footer-li">Provide Best Serveices</li>
+            <li class="footer-li">You wiil be better than before</li>
+          </ul>
+        </div>
+      </div>
+      <h2 class="text-uppercase p-3 m-0">
+        <hr>
+        Copyright &copy; 2024 Usama Al-Iraqy 
+        <hr>
+      </h2>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Jquery File -->
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <!-- Popper File -->
+    <script src="JS/popper.min.js"></script>
+    <!-- Bootstrap Js File -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome Library -->
+    <script src="JS/all.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+.card-viwe {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .card-col-1 {
+    padding: 0;
+  }
+  .card-img-div {
+    padding: 10px;
+  }
+  .card-viwe-img {
+    display: block;
+    margin: auto;
+  }
+  .card-li {
+    margin: 0 6px 0 0;
+    padding: 3px 7px;
+    cursor: pointer;
+  }
+  @media (min-width: 990px) {
+    .card-viwe {
+      width: 75%;
+      margin:40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      min-height: 300px;
+      transition: 0.3s;
+    }
+    .card-col-1 {
+      position: relative;
+    }
+    .card-col-2 {
+      padding:30px;
+    }
+    .card-img-div {
+      padding: 0;
+      transform: skewX(-10deg);
+      position: absolute;
+      left: -15%;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+    .card-img-div-1 {
+      position: absolute;
+      transform: skewX(10deg);
+      padding: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      right: -15%;
+    }
+    .card-viwe-img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 17%;
+      transform: skewX(10deg) scale(1.05);
+      transition: 0.3s;
+    }
+    .card-viwe-img-1 {
+      transform: skewX(-10deg) scale(1.05);
+      right: 17%;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: 0.3s;
+    }
+    .card-li {
+      margin: 0 6px 0 0;
+      padding: 4px 10px;
+    }
+    .card-viwe:hover .card-viwe-img {
+      transform: skewX(10deg) scale(1.1);
+    }
+    .card-viwe:hover .card-viwe-img-1 {
+      transform: skewX(-10deg) scale(1.1);
+    }
+  }
+  .line-1,
+.line-2 {
+  width: 200px;
+  height: 5px;
+  background-color: red;
+}
+.line-2 {
+  background-color: green;
+}
